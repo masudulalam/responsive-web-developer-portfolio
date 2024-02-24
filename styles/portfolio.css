@@ -105,7 +105,7 @@ main section{
 #what-i-do-description{
     padding: 30px 150px;
 }
-.skills-conatiner{
+.skills-container{
     display: flex;
     gap: 20px;
 }
@@ -164,4 +164,19 @@ footer{
     /* background-color: #FFFFFF; */
     border: 0;
     width: 100%;
+}
+
+/* For responsive styles  */
+/* mobile devices */
+.hide {
+    display: none;
+}
+@media screen and (max-width: 576px) {
+    .skills-container{
+        flex-direction: column;
+    }
+
+    #what-i-do-description {
+        padding: 20px;
+    }
 }
