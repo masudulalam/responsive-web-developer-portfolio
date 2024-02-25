@@ -187,6 +187,9 @@ footer{
     .footer-column{
         width: 100%;
     }
+    .contact input[type="text"], input[type="email"], textarea {
+        width: 70%;
+    }
 }
 
 /* medium devices */
