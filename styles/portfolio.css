@@ -64,7 +64,7 @@ nav a{
 .banner-content{
     max-width: 550px;
 }
-banner .profile-pic{
+.banner .profile-pic{
     width: 500px;
 }
 .banner-greeting{
@@ -173,6 +173,12 @@ footer{
 }
 @media screen and (max-width: 576px) {
 
+    .header {
+        background-image: none;
+    }
+    nav,
+    nav > ul,
+    .banner,
     .about-info-container, 
     .skills-container, 
     .resume-container, 
@@ -180,11 +186,23 @@ footer{
         flex-direction: column;
     }
 
+    nav > ul{
+        gap: 15px;
+    }
+
+    .banner .profile-pic{
+        width: 100%;
+    }
+
+    .btn-primary{
+        margin-bottom: 10px;
+    }
+
     #what-i-do-description {
         padding: 20px;
     }
 
-    footer, .about{
+    footer, .about, .banner{
         padding: 10px;
     }
 
